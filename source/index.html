@@ -11,9 +11,9 @@
         <img src="https://via.placeholder.com/190x38" width="190" height="38" alt="Питание CAT ENERGY">
       </a>
       <nav class="main-navigation">
-        <button class="main-navigation__toggle">
+        <button type="button" class="main-navigation__toggle">
           <span class="visually-hidden">
-            Открыть меню
+            Открыть/закрыть меню
           </span>
         </button>
         <div class="main-navigation__wrapper">
@@ -34,13 +34,6 @@
               </a>
             </li>
           </ul>
-          <div class="main-navigation__list  user-list">
-            <a class="user-list__login" href="login.html">
-              Войти
-            </a>
-            <svg class="user-list__login-icon" width="24" height="16">
-            </svg>
-          </div>
         </div>
       </nav>
     </header>
@@ -49,69 +42,69 @@
       <h1 class="visually-hidden">Питание CAT ENERGY</h1>
 
       <section class="banner">
-        <div class="banner-wrapper">
+        <div class="banner__wrapper">
           <img class="banner__image" src="img/banner-image-mobile.jpg">
-          <header class="banner-header">
+          <header class="banner__header">
             <h2 class="banner__title">Функциональное питание для котов</h2>
             <span class="banner__slogan">
               Занялся собой? Займись котом!
             </span>
           </header>
         </div>
-        <a class="banner__choose-program" href="#">
+        <a class="banner__choose-program button button--primary" href="#">
           Подобрать программу
         </a>
       </section>
 
       <section class="programs">
-        <ul class="programs-list">
-          <li class="programs-item programs-item--slim">
-            <h3 class="programs-item__title">Похудение</h3>
-            <p class="programs-item__desc">
+        <ul class="programs__list">
+          <li class="programs__item program program--slim">
+            <h3 class="program__title">Похудение</h3>
+            <p class="program__desc">
               Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
             </p>
-            <a class="programs-item__open">
+            <a class="program__link">
               Каталог Slim
             </a>
           </li>
-          <li class="programs-item programs-item--gain">
-            <h3 class="programs-item__title">Набор массы</h3>
-            <p class="programs-item__desc">
+          <li class="programs__item program program--gain">
+            <h3 class="program__title">Набор массы</h3>
+            <p class="program__desc">
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a class="programs-item__open">
+            <a class="program__link">
               Каталог Pro
             </a>
           </li>
         </ul>
-      <section>
+      </section>
 
       <section class="features">
-        <h2 class="features-header">
+        <h2 class="features__title">
           Как это работает?
         </h2>
-        <ul class=features-list>
+        <ul class="features__list features-list">
           <li class="features__item">
             <h3 class="visually-hidden">Состав</h3>
-            <p class="feature__desc">
+            <p class="features__desc">
               Функциональное питание содержит только полезные питательные вещества.
             </p>
           </li>
           <li class="features__item">
             <h3 class="visually-hidden">Форма</h3>
-            <p class="feature__desc">
+            <p class="features__desc">
               Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
             </p>
           </li>
           <li class="features__item">
             <h3 class="visually-hidden">Питательность</h3>
-            <p class="feature__desc">
+            <p class="features__desc">
               Замените один-два приема обычной еды на наше функциональное питание.
             </p>
           </li>
           <li class="features__item">
             <h3 class="visually-hidden">Эффективность</h3>
-            <p class="feature__desc">
+            <p class="features__desc">
               Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
             </p>
           </li>
@@ -119,11 +112,11 @@
       </section>
 
       <section class="case">
-        <h2 class=case__header>Живой пример</h2>
+        <h2 class=case__title>Живой пример</h2>
         <p class="case__desc">
           Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
         </p>
-        <dl class="case__result">
+        <dl class="case__result result">
           <dt class="result__item">
             5кг
           </dt>
@@ -131,8 +124,8 @@
             снижение веса
           </dd>
         </dl>
-        <dl class="case__result">
-          <dt class="result__item"></dt>
+        <dl class="case__result result">
+          <dt class="result__item">
             60 дней
           </dt>
           <dd class="result__desc">
@@ -146,15 +139,15 @@
       </section>
 
       <section class="location">
-        <div class="location-wrapper">
+        <div class="location__wrapper">
           <span class="location__invite">
             приглашаем к сотрудничеству дилеров!
           </span>
-          <div class="location__adres">
-            <span class="street">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
-            <span class="city">Санкт-Петербург</span>
+          <div class="location__address">
+            <span class="location__street">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</span>
+            <span class="location__city">Санкт-Петербург</span>
           </div>
-          <div class=map>
+          <div class="map">
             <!-- карта -->
           </div>
         </div>
@@ -167,18 +160,18 @@
           <img src="https://via.placeholder.com/128x24" width="128" height="24" alt="Питание CAT ENERGY">
         </div>
         <div class="page-footer__social">
-          <ul class="social-list">
-            <li class="social-item">
+          <ul class="social">
+            <li class="social__item">
               <a class="social__link social__link--vkontakte" href="#">
                 Мы в Вконтакте
               </a>
             </li>
-            <li class="social-item">
+            <li class="social__item">
               <a class="social__link social__link--instagram" href="#">
                 Мы в Instagram
               </a>
             </li>
-            <li class="social-item">
+            <li class="social__item">
               <a class="social__link social__link--facebook" href="#">
                 Мы в Facebook
               </a>
@@ -187,7 +180,7 @@
         </div>
         <div class="page-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <p class="copyright-text">HTML Academy</p>
+            <p class="copyright__text">HTML Academy</p>
             <svg class="copyright__logo" width="27" height="34">
             </svg>
           </a>
