@@ -44,100 +44,104 @@
         Заполните анкету, и мы подберем программу питания для вашего кота
       </p>
       <div class="page-form__wrapper">
-        <form class="page-form__list list-form">
+        <form class="page-form__list form">
 
-          <fieldset class="list-form__item cat-info">
+          <fieldset class="form__item">
             <legend class="visually-hidden">
               Информация о животном
             </legend>
-            <ul class="cat-info__list cat">
-              <li class="cat__name">
-                <label for="cat-name">Имя:*</label>
-                <input type="text" name="cat-name" id="cat-name" placeholder="Барсик">
+            <ul class="form__group form__group--text-input">
+              <li class="form__field field-text">
+                <label class="field-text__label" for="cat-name">Имя:*</label>
+                <input class="field-text__input" type="text" name="cat-name" id="cat-name" placeholder="Барсик">
               </li>
-              <li class="cat__weight">
-                <label for="cat-weigth">Вес(кг):*</label>
-                <input type="text" name="cat-weight" id="cat-weight" placeholder="7">
+              <li class="form__field field-text">
+                <label class="field-text__label" for="cat-weight">Вес(кг):*</label>
+                <input class="field-text__input" type="text" name="cat-weight" id="cat-weight" placeholder="7">
               </li>
-              <li class="cat__age">
-                <label for="cat-age">Возраст(кг):*</label>
-                <input type="text" name="cat-age" id="cat-age" placeholder="7">
+              <li class="form__field field-text">
+                <label class="field-text__label" for="cat-age">Возраст(кг):*</label>
+                <input class="field-text__input" type="text" name="cat-age" id="cat-age" placeholder="7">
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="list-form__item goals-info">
+          <fieldset class="form__item">
             <legend class="visually-hidden">
               Цель программы
             </legend>
-            <ul class="goals-info__list goals">
-              <li class="goals__item">
-                <input type="radio" id="goal1" value="slim">
-                <label for="goal1">Похудение</label>
+            <ul class="form__group form__group--radio">
+              <li class="form__field field-radio">
+                <input class="field-radio__control" type="radio" id="slim" value="slim">
+                <label class="field-radio__label" for="slim">Похудение</label>
               </li>
-              <li class="goals__item goals__item--active">
-                <input type="radio" id="goal2" value="gain" checked>
-                <label for="goal2">Похудение</label>
+              <li class="form__field field-radio">
+                <input class="field-radio__control" type="radio" id="gain" value="gain" checked>
+                <label class="field-radio__label" for="gain">Похудение</label>
               </li>
-              <li class="goals__item">
-                <input type="radio" id="goal3" value="advice">
-                <label for="goal3">Не знаю (Нужен ваш совет)</label>
+              <li class="form__field field-radio">
+                <input class="field-radio__control" type="radio" id="goal3" value="advice">
+                <label class="field-radio__label" for="goal3">Не знаю (Нужен ваш совет)</label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="list-form__item contacts-info">
-            <legend class="contacts-info__title">
+          <fieldset class="form__item">
+            <legend class="form__title">
               Контактные данные (владельца кота)
             </legend>
-            <ul class="contacts-info__list owner-contacts">
-              <li class="owner-contacts__email">
-                <label for="e-mail">E-mail:*</label>
-                <input type="email" name="e-mail" id="e-mail" placeholder="kuklachev@gmail.com">
+            <ul class="form__group form__group--text-input">
+              <li class="form__field field-text">
+                <label class="field-text__label field-text__label--email" for="e-mail">E-mail:*</label>
+                <input class="field-text__input field-text__input--tel" type="email" name="e-mail" id="e-mail" placeholder="kuklachev@gmail.com">
               </li>
-              <li class="owner-contacts__tel">
-                <label for="tel">Телефон:*</label>
-                <input type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
+              <li class="form__field field-text">
+                <label class="field-text__label field-text__label--email" for="tel">Телефон:*</label>
+                <input class="field-text__input field-text__input--tel" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="list-form__item comments">
-            <legend class="comments__title">
+          <fieldset class="form__item">
+            <legend class="form__title">
               Комментарий
             </legend>
-            <textarea class="comments__input">
+            <label class="visually-hidden" for="comment">
+              Оставьте комментарий
+            </label>
+            <textarea class="form__field field-text field-text--area" id="comment">
+              Расскажите обо всех повадках кота
             </textarea>
           </fieldset>
 
-          <fieldset class="list-form__item extra-info">
-            <legend class="extra-info__title">
+          <fieldset class="form__item">
+            <legend class="form__title">
               Дополнительно
             </legend>
-            <ul class="extra-info__list extra">
-              <li class="extra__item extra-item--active">
-                <input type="checkbox" class="visually-hidden filter-input-checkbox" name="sweetener" id="sweetener" checked>
-                <label for="sweetener">Сахарозаменитель</label>
+            <ul class="form__group form__group--checkbox">
+              <li class="form__field checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="sweetener" id="sweetener" checked>
+                <label class="checkbox__label" for="sweetener">Сахарозаменитель</label>
               </li>
-              <li class="extra__item">
-                <input type="checkbox" class="visually-hidden filter-input-checkbox" name="water" id="water">
-                <label for="water">Питьевая вода</label>
+              <li class="form__field checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="water" id="water">
+                <label class="checkbox__label" for="water">Питьевая вода</label>
               </li>
-              <li class="extra__item">
-                <input type="checkbox" class="visually-hidden filter-input-checkbox" name="milk" id="milk">
-                <label for="milk">Молоко</label>
+              <li class="form__field checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="milk" id="milk">
+                <label class="checkbox__label" for="milk">Молоко</label>
               </li>
-              <li class="extra__item">
-                <input type="checkbox" class="visually-hidden filter-input-checkbox" name="vitamin" id="vitamin">
-                <label for="vitamin">Витамины</label>
+              <li class="form__field checkbox">
+                <input class="visually-hidden checkbox__input" type="checkbox" name="vitamin" id="vitamin">
+                <label class="checkbox__label" for="vitamin">Витамины</label>
               </li>
             </ul>
           </fieldset>
 
-          <button type="submit" class="list-form__button button button--primary">
+          <button type="submit" class="form__button button button--primary">
             Отправить заявку
           </button>
-          <span class="list-form__legend">
+          <span class="form__note">
             * — Обязательные поля
           </span>
         </form>
