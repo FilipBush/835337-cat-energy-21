@@ -1,0 +1,28 @@
+.page {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $basic_black;
+  background-color: grey;
+  height: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  width: 320px;
+  margin: 0 auto;
+  background-color: $basic_white;
+}
+
+
+// .container {
+//   width: 1200px;
+//   margin: 0 auto;
+//   background-color: var(--basic-white);
+// }
+
+// .footer-social,
+// .site-navigation {
+//   list-style-type: none;
+// }
