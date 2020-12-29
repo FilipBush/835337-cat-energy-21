@@ -22,35 +22,3 @@
   padding-bottom: 21px;
   border-bottom: 1px solid $special_grey_3;
 }
-
-.social {
-  width: 130px;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.copyright__link {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-}
-
-.copyright__text {
-  margin: 0;
-  padding: 0;
-  padding-top: 28px;
-  font-family: arial;
-  font-size: 16px;
-  color: $basic_black;
-}
-
-.copyright__logo {
-  margin: 0;
-  padding: 0;
-  padding-top: 22px;
-  box-sizing: content-box;
-}

@@ -1,5 +1,5 @@
 .banner {
-  background-image: url("../img/background_banner.jpg");
+  background-image: url("../img/promo_background.jpg");
   background-position: top;
   background-repeat: no-repeat;
   margin-bottom: 22px;
@@ -36,17 +36,4 @@
   margin: 0 auto;
   max-width: 100%;
   height: auto;
-}
-
-.button {
-  color: $basic_white;
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
-  font-style: normal;
-  margin: 0 auto;
-  padding: 10px 0;
-  width: 280px;
-  height: 40px;
-  background-color: $basic_green;
 }

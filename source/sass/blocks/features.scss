@@ -1,7 +1,6 @@
 .features {
   margin: 0;
   margin-bottom: 42px;
-  padding-left: 0;
   padding-left: 20px;
   padding-right: 21px;
 }
@@ -12,12 +11,11 @@
   padding: 0;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
 }
 
-.features-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.features__list {
+  @include list-reset;
 }
 
 .features__item {
@@ -28,8 +26,7 @@
 
 .features__desc {
   margin: 0;
-  padding: 0;
-  font-family: arial;
+  font-family: $custom-font;
   font-size: 14px;
   line-height: 18px;
 }

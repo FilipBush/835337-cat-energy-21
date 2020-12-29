@@ -15,15 +15,5 @@
 .location__address {
   width: 140px;
   line-height: 20px;
-  font-family: Arial;
-}
-
-.map {
-  content: "";
-  width: 320px;
-  height: 362px;
-  background-image: url(../img/location.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+  font-family: $custom-font;
 }

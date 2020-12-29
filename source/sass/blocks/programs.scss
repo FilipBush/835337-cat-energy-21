@@ -1,5 +1,4 @@
 .programs {
-  width: 280px;
   margin: 0 auto;
   margin-bottom: 27px;
 }
@@ -7,7 +6,6 @@
 .programs__list {
   display: flex;
   margin: 0;
-
   padding: 0;
   flex-direction: column;
   list-style: none;
@@ -19,31 +17,10 @@
   margin-bottom: 22px;
   display: flex;
   flex-wrap: wrap;
-}
 
-.programs__item:last-of-type {
-  margin-bottom: 0;
-}
-
-.program__title:before {
-  position: absolute;
-  top: 21px;
-  left: 13px;
-  content: "";
-  display: block;
-  width: 67px;
-  height: 53px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center bottom;
-}
-
-.program--slim .program__title:before {
-  background-image: url(../img/logo_program_slim.svg);
-}
-
-.program--gain .program__title:before {
-  background-image: url(../img/logo_program_gain.svg);
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .program__title {
@@ -56,16 +33,36 @@
   padding-left: 91px;
   font-size: 24px;
   line-height: 37px;
+
+  &::before {
+    position: absolute;
+    top: 21px;
+    left: 13px;
+    content: "";
+    display: block;
+    width: 67px;
+    height: 53px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+}
+
+.program--slim .program__title::before {
+  background-image: url("../img/logo_program_slim.svg");
+}
+
+.program--gain .program__title::before {
+  background-image: url("../img/logo_program_gain.svg");
 }
 
 .program__desc {
-  padding: 0;
   margin: 0;
   padding-bottom: 23px;
   margin-left: 20px;
   margin-right: 33px;
   border-bottom: 1px solid $special_grey_3;
-  font-family: Arial;
+  font-family: $custom-font;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
