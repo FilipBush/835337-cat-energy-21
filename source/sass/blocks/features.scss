@@ -1,0 +1,32 @@
+.features {
+  margin: 0;
+  margin-bottom: 42px;
+  padding-left: 20px;
+  padding-right: 21px;
+}
+
+.features__title {
+  margin: 0;
+  margin-bottom: 38px;
+  padding: 0;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.features__list {
+  @include list-reset;
+}
+
+.features__item {
+  margin: 0;
+  padding: 0;
+  min-height: 60px;
+}
+
+.features__desc {
+  margin: 0;
+  font-family: $custom-font;
+  font-size: 14px;
+  line-height: 18px;
+}

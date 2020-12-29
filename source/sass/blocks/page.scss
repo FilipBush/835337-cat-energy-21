@@ -1,0 +1,14 @@
+.page {
+  font-family: $default-font;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: $basic_black;
+  height: 100%;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: $basic_white;
+}

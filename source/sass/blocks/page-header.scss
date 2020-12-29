@@ -1,0 +1,12 @@
+.page-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px $basic_grey_3 solid;
+  padding: 12px 20px;
+}

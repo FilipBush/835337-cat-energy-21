@@ -1,0 +1,39 @@
+.banner {
+  background-image: url("../img/promo_background.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  margin-bottom: 22px;
+}
+
+.banner__wrapper {
+  margin: 0 auto;
+}
+
+.banner__header {
+  color: $basic_white;
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 27px 35px;
+  padding-bottom: 0;
+  text-align: center;
+}
+
+.banner__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  font-style: normal;
+  margin: 0;
+  margin-bottom: 25px;
+}
+
+.banner__slogan {
+  text-transform: uppercase;
+}
+
+.banner__image {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}

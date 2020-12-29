@@ -1,0 +1,78 @@
+.programs {
+  margin: 0 auto;
+  margin-bottom: 27px;
+}
+
+.programs__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  list-style: none;
+}
+
+.programs__item {
+  position: relative;
+  background-color: $basic_grey;
+  margin-bottom: 22px;
+  display: flex;
+  flex-wrap: wrap;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.program__title {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+  padding-top: 30px;
+  padding-left: 91px;
+  font-size: 24px;
+  line-height: 37px;
+
+  &::before {
+    position: absolute;
+    top: 21px;
+    left: 13px;
+    content: "";
+    display: block;
+    width: 67px;
+    height: 53px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+  }
+}
+
+.program--slim .program__title::before {
+  background-image: url("../img/logo_program_slim.svg");
+}
+
+.program--gain .program__title::before {
+  background-image: url("../img/logo_program_gain.svg");
+}
+
+.program__desc {
+  margin: 0;
+  padding-bottom: 23px;
+  margin-left: 20px;
+  margin-right: 33px;
+  border-bottom: 1px solid $special_grey_3;
+  font-family: $custom-font;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.program__link {
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-left: 19px;
+  margin: 0;
+  margin-bottom: 18px;
+}
