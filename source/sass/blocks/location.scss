@@ -1,9 +1,12 @@
-
 .location__wrapper {
   display: flex;
   flex-wrap: wrap;
   padding: 28px 19px;
   margin: 0;
+
+  &--form {
+    background-color: $basic_grey;
+  }
 }
 
 .location__invite {
