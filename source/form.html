@@ -3,16 +3,17 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page__body">
 
     <header class="page-header">
       <div class="page-header__top">
-        <a class="page-header__logo">
+        <a class="page-header__logo" href="index.html">
           <img src="img/logo_mobile.svg" width="34" height="38" alt="маскот CAT ENERGY">
         </a>
-        <a>
+        <a href="index.html">
           <img src="img/logo_footer.svg" width="101" height="18" alt="Питание CAT ENERGY">
         </a>
         <button type="button" class="page-header__toggle">
@@ -25,12 +26,12 @@
         <div class="main-navigation__wrapper">
           <ul class="main-navigation__list site-list">
             <li class="site-list__item site-list__item--active">
-              <a>
+              <a href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a href="catalog.html">
                 Каталог продукции
               </a>
             </li>
@@ -116,8 +117,7 @@
               <label class="visually-hidden" for="comment">
                 Оставьте комментарий
               </label>
-              <textarea class="form__field field-text field-text--area" id="comment">
-                Расскажите обо всех повадках кота
+              <textarea class="form__field field-text field-text--area" id="comment">Расскажите обо всех повадках кота
               </textarea>
             </fieldset>
 
@@ -155,7 +155,7 @@
         </div>
       </div>
       <section class="location">
-        <div class="location__wrapper location__wrapper--form">
+        <div class="location__wrapper location__wrapper--form container">
           <span class="location__invite">
             приглашаем к сотрудничеству дилеров!
           </span>
@@ -170,7 +170,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__wrapper">
+      <div class="page-footer__wrapper container">
         <a class="page-footer__logo">
           <img src="img/logo_footer.svg" width="128" height="24" alt="Питание CAT ENERGY">
         </a>
@@ -212,6 +212,5 @@
         </div>
       </div>
     </footer>
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
   </body>
 </html>

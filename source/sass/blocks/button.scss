@@ -1,11 +1,15 @@
 .button {
   color: $basic_white;
-  display: block;
-  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   font-style: normal;
-  margin: 0 auto;
-  padding: 11px 0;
-  width: 280px;
-  background-color: $basic_green;
+  padding: 0;
+  border: none;
+
+  &--primary {
+    background-color: $basic_green;
+    padding: 11px 35px;
+  }
 }
