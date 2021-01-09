@@ -1,0 +1,79 @@
+.extra {
+  &__item {
+    padding: 13px 0 19px;
+    border-bottom: 1px solid $basic_grey_3;
+
+    &:first-child {
+      border-top: 1px solid $basic_grey_3;
+    }
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 15px;
+    line-height: 14px;
+    font-family: $custom-font;
+    color: $special_dark_grey;
+  }
+
+  &__name {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    margin-bottom: 13px;
+  }
+
+  &__button {
+    width: 280px;
+  }
+
+  &__bonus {
+    padding: 58px 10px 10px;
+    text-align: center;
+    height: 289px;
+    background-image: url("../img/catalog-mobile-bonus.jpg");
+  }
+
+  &__offer {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-family: $custom-font;
+    font-size: 16px;
+    line-height: 20px;
+    color: $basic_white;
+    width: 161px;
+    padding-top: 0;
+
+    &::before {
+      display: block;
+      margin: 0 auto;
+      content: "";
+      width: 78px;
+      height: 80px;
+      background-image: url("../img/catalog-mobile-gift.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      margin-bottom: 48px;
+    }
+  }
+
+  &__list {
+    @include list-reset;
+    margin-bottom: 25px;
+    border-bottom: 1px solid $special_grey;
+  }
+
+  &__header {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 36px;
+  }
+}

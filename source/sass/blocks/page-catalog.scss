@@ -1,0 +1,15 @@
+.page-catalog {
+  padding-top: 25px;
+
+  &__header {
+    margin: 0;
+    margin-bottom: 41px;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+  }
+
+  &__list {
+    @include list-reset;
+  }
+}
