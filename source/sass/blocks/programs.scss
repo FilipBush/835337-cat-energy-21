@@ -4,6 +4,11 @@
   margin: 0;
   flex-direction: column;
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .programs__item {
@@ -11,10 +16,16 @@
   background-color: $basic_grey;
   margin-bottom: 22px;
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+    min-height: 374px;
   }
 }
 
@@ -43,12 +54,36 @@
   }
 }
 
+.program--slim {
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/logo_program_slim.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+}
+
 .program--slim .program__title::before {
   background-image: url("../img/logo_program_slim.svg");
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+}
+
+.program--gain {
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/logo_program_gain.svg");
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
 }
 
 .program--gain .program__title::before {
   background-image: url("../img/logo_program_gain.svg");
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
 }
 
 .program__desc {
@@ -62,6 +97,10 @@
   line-height: 18px;
   font-weight: 400;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    max-width: 400px;
+  }
 }
 
 .program__link {

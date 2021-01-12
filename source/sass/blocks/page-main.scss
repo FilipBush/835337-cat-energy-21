@@ -4,4 +4,11 @@
   &__features {
     margin-bottom: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    &__banner {
+      min-height: 557px;
+      margin-bottom: 82px;
+    }
+  }
 }

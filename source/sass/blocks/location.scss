@@ -1,12 +1,30 @@
+.location {
+  position: relative;
+}
+
 .location__wrapper {
   display: flex;
   flex-wrap: wrap;
   padding-top: 28px;
   padding-bottom: 28px;
   margin: 0;
+  background-color: $basic_white;
 
   &--form {
     background-color: $basic_grey;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: 570px;
+    min-height: 201px;
+    position: absolute;
+    top: 95px;
+    left: 110px;
   }
 }
 

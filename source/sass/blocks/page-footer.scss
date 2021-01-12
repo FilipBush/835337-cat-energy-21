@@ -7,12 +7,25 @@
 .page-footer__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .page-footer__logo {
   text-align: center;
   border-bottom: 1px solid $special_grey_3;
   padding-bottom: 32px;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: none;
+  }
 }
 
 .page-footer__social {
@@ -21,4 +34,8 @@
   padding-right: 77px;
   padding-bottom: 21px;
   border-bottom: 1px solid $special_grey_3;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }

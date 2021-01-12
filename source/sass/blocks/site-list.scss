@@ -2,8 +2,16 @@
   border-bottom: 1px $basic_grey_3 solid;
   padding: 12px 20px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;
+  }
 }
 
 .site-list__item a {
   color: $basic_black;
+
+  @media (min-width: $desktop-width) {
+    color: $basic_white;
+  }
 }

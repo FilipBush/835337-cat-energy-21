@@ -2,6 +2,18 @@
   background-image: url("../img/promo_background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
+
+  &__choose-program {
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: 270px;
+      left: 115px;
+    }
+  }
 }
 
 .banner__wrapper {
@@ -15,6 +27,12 @@
   padding: 27px 35px;
   padding-bottom: 0;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 27px 117px;
+    color: $basic_black;
+    text-align: left;
+  }
 }
 
 .banner__title {

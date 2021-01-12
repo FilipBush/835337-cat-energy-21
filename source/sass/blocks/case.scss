@@ -1,6 +1,8 @@
 .case {
   background-color: $basic-grey_4;
   padding: 27px 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .case__title {

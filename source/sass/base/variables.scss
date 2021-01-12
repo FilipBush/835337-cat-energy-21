@@ -1,3 +1,4 @@
+//Colors
 $basic_black: #000000;
 $basic_black2: #111111;
 $basic_white: #ffffff;
@@ -14,5 +15,11 @@ $special_dark_grey: #444444;
 $special_dark_grey_2: #222222;
 $status_error: #ff8282;
 
+//Fonts
 $default-font: "Oswald", "Arial", sans-serif;
 $custom-font: "Arial", sans-serif;
+
+//Viewports
+$tablet-width: 768px;
+$desktop-width: 1440px;
+$mobile-width-only: 767px;

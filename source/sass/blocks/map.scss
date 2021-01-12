@@ -5,4 +5,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
+  @media (min-width: $desktop-width) {
+    min-height: 400px;
+  }
 }
