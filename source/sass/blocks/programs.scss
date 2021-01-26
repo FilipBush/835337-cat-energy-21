@@ -1,44 +1,50 @@
 .programs__list {
-  display: flex;
   padding: 0;
   margin: 0;
-  flex-direction: column;
   list-style: none;
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
   }
 }
 
 .programs__item {
   position: relative;
   background-color: $basic_grey;
+  padding: 30px 20px 18px;
   margin-bottom: 22px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 
   &:last-child {
     margin-bottom: 0;
   }
 
+  @media (min-width: $tablet-width) {
+    padding: 77px 27px 53px 52px;
+  }
+
   @media (min-width: $desktop-width) {
-    min-width: 570px;
-    min-height: 374px;
+    margin-bottom: 0;
   }
 }
 
 .program__title {
+  display: inline-flex;
   text-transform: uppercase;
   font-weight: 400;
   margin: 0;
   margin-bottom: 29px;
+  margin-left: 71px;
   padding: 0;
-  padding-top: 30px;
-  padding-left: 91px;
   font-size: 24px;
   line-height: 37px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+    font-size: 36px;
+    line-height: 36px;
+  }
 
   &::before {
     position: absolute;
@@ -54,13 +60,6 @@
   }
 }
 
-.program--slim {
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/logo_program_slim.svg");
-    background-repeat: no-repeat;
-    background-position: right center;
-  }
-}
 
 .program--slim .program__title::before {
   background-image: url("../img/logo_program_slim.svg");
@@ -71,10 +70,8 @@
 }
 
 .program--gain {
-  @media (min-width: $tablet-width) {
-    background-image: url("../img/logo_program_gain.svg");
-    background-repeat: no-repeat;
-    background-position: right center;
+  & .program__desc {
+    max-width: 342px;
   }
 }
 
@@ -88,9 +85,8 @@
 
 .program__desc {
   margin: 0;
+  margin-bottom: 15px;
   padding-bottom: 23px;
-  margin-left: 20px;
-  margin-right: 33px;
   border-bottom: 1px solid $special_grey_3;
   font-family: $custom-font;
   font-size: 14px;
@@ -99,14 +95,23 @@
   font-style: normal;
 
   @media (min-width: $tablet-width) {
-    max-width: 400px;
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 377px;
+    padding-bottom: 0;
+    margin-bottom: 48px;
+    border-bottom: none;
   }
 }
 
 .program__link {
+
   text-transform: uppercase;
-  padding-top: 15px;
-  padding-left: 19px;
   margin: 0;
-  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

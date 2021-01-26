@@ -6,32 +6,37 @@
   @media (min-width: $tablet-width) {
     background-image: none;
   }
+}
 
-  &__choose-program {
-    @media (min-width: $tablet-width) {
-      position: absolute;
-      top: 270px;
-      left: 115px;
-    }
+.banner__button {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+    width: 244px;
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 
-.banner__wrapper {
-  margin: 0 auto;
-}
 
-.banner__header {
+.banner__wrapper {
   color: $basic_white;
-  margin: 0;
-  margin-bottom: 29px;
-  padding: 27px 35px;
-  padding-bottom: 0;
+  display: inline-flex;
+  flex-direction: column;
+  margin: 0 auto;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 27px 117px;
+    padding-left: 112px;
+    margin-bottom: 49px;
+    padding-top: 27px;
     color: $basic_black;
     text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 190px;
   }
 }
 
@@ -42,15 +47,44 @@
   font-style: normal;
   margin: 0;
   margin-bottom: 25px;
+  padding-top: 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    padding-right: 150px;
+    margin-bottom: 41px;
+    padding-top: 0;
+  }
 }
 
 .banner__slogan {
   text-transform: uppercase;
+  margin-bottom: 302px;
+  z-index: 1;
+  font-size: 20px;
+  line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 300px;
+    margin-bottom: 49px;
+  }
 }
 
 .banner__image {
-  display: block;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -50px;
   margin: 0 auto;
   max-width: 100%;
   height: auto;
+
+  @media (min-width: $tablet-width) {
+    bottom: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 500px;
+  }
 }

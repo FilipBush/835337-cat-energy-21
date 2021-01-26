@@ -11,5 +11,9 @@
   &--primary {
     background-color: $basic_green;
     padding: 11px 35px;
+
+    @media (min-width: $tablet-width) {
+      padding: 17px 25px;
+    }
   }
 }

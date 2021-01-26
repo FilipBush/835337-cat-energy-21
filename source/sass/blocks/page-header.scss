@@ -1,18 +1,11 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  min-height: 252px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
     min-height: 139px;
     justify-content: space-between;
-  }
-
-  &__toggle {
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
   }
 }
 
@@ -24,5 +17,11 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;
+  }
+}
+
+.page-header__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }

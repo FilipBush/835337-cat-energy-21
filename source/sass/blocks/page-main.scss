@@ -2,7 +2,7 @@
   &__banner,
   &__programs,
   &__features {
-    margin-bottom: 22px;
+    padding-bottom: 22px;
   }
 
   @media (min-width: $desktop-width) {
@@ -10,5 +10,11 @@
       min-height: 557px;
       margin-bottom: 82px;
     }
+  }
+}
+
+.page-main__banner {
+  @media (min-width: $tablet-width) {
+    min-height: 787px;
   }
 }

@@ -12,6 +12,10 @@
   font-family: $custom-font;
   font-size: 16px;
   color: $basic_black;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .copyright__logo {
@@ -19,4 +23,8 @@
   padding: 0;
   padding-top: 22px;
   box-sizing: content-box;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
