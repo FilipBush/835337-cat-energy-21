@@ -23,8 +23,45 @@
 }
 
 .features__item {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
+  margin-bottom: 20px;
   padding: 0;
+
+  &:before {
+    display: block;
+    content: "";
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    margin-right: 20px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+
+  &--nutrient:before {
+    background-image: url("../img/desc-icon-nutrient.png")
+  }
+
+  &--powder:before {
+    background-image: url("../img/desc-icon-powder.png")
+  }
+
+  &--food:before {
+    background-image: url("../img/desc-icon-food.png")
+  }
+
+  &--time:before {
+    background-image: url("../img/desc-icon-time.png")
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+  }
 
   @media (min-width: $desktop-width) {
     width: 245px;
@@ -32,6 +69,7 @@
 }
 
 .features__desc {
+  max-width: 200px;
   margin: 0;
   font-family: $custom-font;
   font-size: 14px;
