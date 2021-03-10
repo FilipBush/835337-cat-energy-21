@@ -41,13 +41,13 @@
   line-height: 18px;
 
   @media (min-width: $tablet-width) {
+    max-width: 380px;
     font-size: 20px;
     line-height: 30px;
-    padding-right: 300px;
     margin-bottom: 66px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-right: 850px;
+    max-width: 380px;
   }
 }

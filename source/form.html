@@ -48,7 +48,7 @@
         <div class="page-form__wrapper">
           <form class="page-form__list form">
 
-            <fieldset class="form__item cat-info">
+            <fieldset class="form__item form__item--bio">
               <legend class="visually-hidden">
                 Информация о животном
               </legend>
@@ -68,7 +68,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="form__item target">
+            <fieldset class="form__item form__item--plan">
               <legend class="visually-hidden">
                 Цель программы
               </legend>
@@ -88,11 +88,11 @@
               </ul>
             </fieldset>
 
-            <fieldset class="form__item owner-contacts">
+            <fieldset class="form__item form__item--contacts">
               <p class="form__title">
                 Контактные данные (владельца кота)
               </p>
-              <ul class="form__group form__group--text-input form__group--owner-contacts-input">
+              <ul class="form__group form__group--contacts">
                 <li class="form__field field-text">
                   <label class="field-text__label field-text__label--email" for="e-mail">E&#8209mail:*</label>
                   <input class="field-text__input field-text__input--tel" type="email" name="e-mail" id="e-mail" placeholder="kuklachev@gmail.com">
@@ -111,8 +111,7 @@
               <label class="visually-hidden" for="comment">
                 Оставьте комментарий
               </label>
-              <textarea class="form__field field-text field-text--area" id="comment">Расскажите обо всех повадках кота
-              </textarea>
+              <textarea class="form__field field-text field-text--area" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
 
             <fieldset class="form__item addition">

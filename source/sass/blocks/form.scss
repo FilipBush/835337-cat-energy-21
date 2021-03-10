@@ -1,11 +1,12 @@
 .form__item {
+  margin: 0;
   padding: 0;
   border: none;
   text-transform: uppercase;
-  border-bottom: 1px $special_grey_3 solid;
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    width: 100%;
   }
 
   &.addition {
@@ -16,32 +17,41 @@
     }
   }
 
-  &:first-child {
-    padding-top: 0;
-
-    @media (min-width: $desktop-width) {
-      width: 569px;
-    }
-  }
-
-  &:nth-child(2) {
-
-    @media (min-width: $desktop-width) {
-      width: 50%;
-    }
-  }
-
-  &:nth-child(3),
-  &:nth-child(4),
-  &:nth-child(5) {
-
-    @media (min-width: $desktop-width) {
-      width: 100%;
-    }
-  }
-
   &:last-of-type {
     border-bottom: none;
+  }
+}
+
+.form__item--bio {
+  padding-bottom: 24px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: calc(50% - 40px);
+  }
+}
+
+.form__item--plan {
+  padding: 23px 0;
+  padding: 20px 0;
+  margin-bottom: 23px;
+  border-bottom: 1px $special_grey_3 solid;
+  border-top: 1px $special_grey_3 solid;
+
+  @media (min-width: $tablet-width) {
+    padding: 25px 0;
+    margin-bottom: 71px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: auto;
+    margin-bottom: 69px;
+    padding: 38px 0;
+    width: calc(50% - 40px);
+    border: 1px $special_grey_3 solid;
   }
 }
 
@@ -49,20 +59,18 @@
   @include list-reset;
 }
 
-.form__group--text-input {
+.form__group--contacts {
   padding-bottom: 24px;
 
   @media (min-width: $tablet-width) {
     padding-bottom: 65px;
   }
-}
-
-.form__group--owner-contacts-input {
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    column-gap: 100px;
+    grid-gap: 100px;
+
   }
 
   & .form__field {
@@ -78,6 +86,8 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    column-gap: 40px;
+    row-gap: 32px;
   }
 
   @media (min-width: $desktop-width) {
@@ -122,11 +132,12 @@
 
 .form__field.checkbox {
   @media (min-width: $tablet-width) {
-    margin-bottom: 35px;
+    margin: 0;
   }
 }
 
 .form__note {
+  font-family: $custom-font;
   font-size: 14px;
   line-height: 16px;
   display: block;
