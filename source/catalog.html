@@ -8,45 +8,39 @@
   </head>
   <body class="page__body">
 
-    <header class="page-header">
-      <div class="page-header__top">
-        <a class="page-header__logo" href="index.html">
-          <img src="img/logo_mobile.svg" width="34" height="38" alt="маскот CAT ENERGY">
-        </a>
-        <a href="index.html">
-          <img src="img/logo_footer.svg" width="101" height="18" alt="Питание CAT ENERGY">
-        </a>
-        <button type="button" class="page-header__toggle">
-          <span class="visually-hidden">
-            Открыть/закрыть меню
-          </span>
-        </button>
-      </div>
-      <nav class="main-navigation">
-        <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    <header class="page-header container">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__mascot" src="img/logo_mobile.svg" width="34" height="38" alt="маскот CAT ENERGY">
+        <img src="img/logo_footer.svg" width="101" height="18" alt="Питание CAT ENERGY">
+      </a>
+      <button type="button" class="button page-header__toggle">
+        <span class="visually-hidden">
+          Открыть/закрыть меню
+        </span>
+      </button>
+    <nav class="main-navigation">
+      <ul class="main-navigation__list site-list">
+        <li class="site-list__item site-list__item--active site-list__item--form">
+          <a href="#">
+            Главная
+          </a>
+        </li>
+        <li class="site-list__item site-list__item--form">
+          <a href="catalog.html">
+            Каталог продукции
+          </a>
+        </li>
+        <li class="site-list__item site-list__item--form">
+          <a href="form.html">
+            Подбор программы
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
     <main class="page-catalog">
-      <div class="container">
+      <div class="container container--catalog">
         <section class="page-catalog__products">
           <h1 class="page-catalog__header">Каталог продукции</h1>
           <ul class="page-catalog__list catalog">
@@ -56,20 +50,20 @@
                 <img class="product__image" width="140" height="112" src="img/catalog-mobile-500-chicken.jpg" alt="Оранжевая маленькая упаковка питания Cat Energy PRO 500 со вкусом курицы">
               </a>
               <ul class="product__info spec">
-                <li class="spec__row">
+                <li class="spec__element spec__element--title">
                   <a class="product__title" href="product.html">
                     Cat Energy PRO 500 г
                   </a>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Масса</p>
                   <p class="spec__value">500 г</p>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Вкус</p>
                   <p class="spec__value">Курица</p>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Цена</p>
                   <p class="spec__value">700 Р.</p>
                 </li>
@@ -84,20 +78,20 @@
                 <img class="product__image" width="140" height="112" src="img/catalog-mobile-1000-chicken.jpg" alt="Оранжевая большая упаковка питания Cat Energy PRO со вкусом курицы">
               </a>
               <ul class="product__info spec">
-                <li class="spec__row">
+                <li class="spec__element spec__element--title">
                   <a class="product__title" href="product.html">
                     Cat Energy PRO 1000 г
                   </a>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Масса</p>
                   <p class="spec__value">1000 г</p>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Вкус</p>
                   <p class="spec__value">Курица</p>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Цена</p>
                   <p class="spec__value">1000 Р.</p>
                 </li>
@@ -112,20 +106,20 @@
                 <img class="product__image" width="140" height="112" src="img/catalog-mobile-500-fish.jpg" alt="Зеленая маленькая упаковка питания Cat Energy PRO со вкусом рыбы">
               </a>
               <ul class="product__info spec">
-                <li class=spec__row>
+                <li class="spec__element spec__element--title">
                   <a class="product__title" href="product.html">
                     Cat Energy PRO 500 г
                   </a>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Масса</p>
                   <p class="spec__value">500 г</p>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Вкус</p>
                   <p class="spec__value">Рыба</p>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Цена</p>
                   <p class="spec__value">700 Р.</p>
                 </li>
@@ -140,20 +134,20 @@
                 <img class="product__image" width="140" height="112" src="img/catalog-mobile-1000-fish.jpg" alt="Зеленая большая упаковка питания Cat Energy PRO со вкусом рыбы">
               </a>
               <ul class="product__info spec">
-                <li class="spec__row">
+                <li class="spec__element spec__element--title">
                   <a class="product__title" href="product.html">
                     Cat Energy PRO 1000 г
                   </a>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Масса</p>
                   <p class="spec__value">1000 г</p>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Вкус</p>
                   <p class="spec__value">Рыба</p>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Цена</p>
                   <p class="spec__value">1000 Р.</p>
                 </li>
@@ -168,20 +162,20 @@
                 <img class="product__image" width="140" height="112" src="img/catalog-mobile-500-grecha.jpg" alt="Синяя маленькая упаковка питания Cat Energy Slim со вкусом гречки">
               </a>
               <ul class="product__info spec">
-                <li class="spec__row">
+                <li class="spec__element spec__element--title">
                   <a class="product__title" href="product.html">
                     Cat Energy Slim 500 г
                   </a>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Масса</p>
                   <p class="spec__value">500 г</p>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Вкус</p>
                   <p class="spec__value">Гречка</p>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Цена</p>
                   <p class="spec__value">400 Р.</p>
                 </li>
@@ -196,20 +190,20 @@
                 <img class="product__image" width="140" height="112" src="img/catalog-mobile-1000-grecha.jpg" alt="Синяя большая упаковка питания Cat Energy Slim со вкусом гречки">
               </a>
               <ul class="product__info spec">
-                <li class="spec__row">
+                <li class="spec__element spec__element--title">
                   <a class="product__title" href="product.html">
                     Cat Energy Slim 1000 г
                   </a>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Масса</p>
                   <p class="spec__value">1000 г</p>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Вкус</p>
                   <p class="spec__value">Гречка</p>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Цена</p>
                   <p class="spec__value">700 Р.</p>
                 </li>
@@ -224,20 +218,20 @@
                 <img class="product__image" width="140" height="112" src="img/catalog-mobile-500-rice.jpg" alt="Фиолетовая маленькая упаковка питания Cat Energy Slim со вкусом риса">
               </a>
               <ul class="product__info spec">
-                <li class="spec__row">
+                <li class="spec__element spec__element--title">
                   <a class="product__title" href="product.html">
                     Cat Energy Slim 500 г
                   </a>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Масса</p>
                   <p class="spec__value">500 г</p>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Вкус</p>
                   <p class="spec__value">Рис</p>
                 </li>
-                <li class="spec__row">
+                <li class="spec__element">
                   <p class="spec__title">Цена</p>
                   <p class="spec__value">500 Р.</p>
                 </li>
@@ -318,7 +312,7 @@
             </ul>
             <div class="extra__bonus">
               <span class="extra__offer">
-                Закажите все и получите чехол для кота в подарок!
+                <p class="extra__text">Закажите все и получите чехол для кота в подарок!</p>
               </span>
             </div>
           </div>

@@ -1,14 +1,36 @@
 .spec {
   margin-bottom: 22px;
 
-  &__row {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
+
+  &__element {
     display: flex;
     justify-content: space-between;
     margin-bottom: 6px;
+    font-size: 12px;
+    line-height: 16px;
 
-    &:last-child,
-    &:first-child {
+    @media (min-width: $tablet-width) {
+      padding-bottom: 9px;
+      margin-bottom: 5px;
+      font-size: 16px;
+      line-height: 16px;
+      border-bottom: 1px solid $special_grey;
+    }
+
+    &:last-child {
       margin-bottom: 0;
+    }
+  }
+
+  &__element--title {
+    margin-bottom: 0;
+    border: none;
+
+    @media (min-width: $tablet-width) {
+      justify-content: center;
     }
   }
 
@@ -16,8 +38,7 @@
   &__value {
     margin: 0;
     font-family: $custom-font;
-    font-size: 12px;
-    line-height: 16px;
+
     color: $special_dark_grey;
   }
 }
