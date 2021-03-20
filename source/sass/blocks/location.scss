@@ -1,5 +1,6 @@
 .location {
   position: relative;
+  background-color: $basic_grey;
 }
 
 .location__wrapper {
@@ -11,7 +12,12 @@
   background-color: $basic_white;
 
   &--form {
-    background-color: $basic_grey;
+    background-color: inherit;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 65px;
+    padding-bottom: 62px;
   }
 
   @media (min-width: $desktop-width) {
@@ -20,6 +26,7 @@
     top: 95px;
     left: 110px;
     padding: 66px 76px;
+    background-color: $basic-white;
   }
 }
 

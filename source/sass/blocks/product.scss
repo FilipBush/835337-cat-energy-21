@@ -5,8 +5,20 @@
   padding-top: 19px;
   margin-bottom: 24px;
 
+  @media (min-width: $tablet-width) {
+    position: relative;
+    flex-direction: column;
+    padding-top: 161px;
+    margin-bottom: 0;
+  }
+
   &__page {
     padding: 0;
+
+    @media (min-width: $tablet-width) {
+      position: absolute;
+      top: -50px;
+    }
   }
 
   &__title {
@@ -16,6 +28,18 @@
     color: $basic-black;
     margin-bottom: 18px;
     width: 76px;
+
+    @media (min-width: $tablet-width) {
+      text-align: center;
+      font-size: 20px;
+      line-height: 24px;
+      width: 126px;
+      margin-bottom: 21px;
+    }
+
+    @media (min-width: $tablet-width) {
+      line-height: 21px;
+    }
   }
 
   &__card {
@@ -31,9 +55,28 @@
     flex-wrap: wrap;
     width: 140px;
     justify-content: space-between;
+
+    @media (min-width: $tablet-width) {
+      width: 252px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 166px;
+    }
   }
 }
 
 .product__button {
-  width: 320px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 248px;
+    font-size: 16px;
+    padding: 10px 25px;
+    margin-bottom: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
+  }
 }

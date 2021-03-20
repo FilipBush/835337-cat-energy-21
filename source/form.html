@@ -8,53 +8,47 @@
   </head>
   <body class="page__body">
 
-    <header class="page-header">
-      <div class="page-header__top">
+    <header class="page-header container">
         <a class="page-header__logo" href="index.html">
-          <img src="img/logo_mobile.svg" width="34" height="38" alt="маскот CAT ENERGY">
-        </a>
-        <a href="index.html">
+          <img class="page-header__mascot" src="img/logo_mobile.svg" width="34" height="38" alt="маскот CAT ENERGY">
           <img src="img/logo_footer.svg" width="101" height="18" alt="Питание CAT ENERGY">
         </a>
-        <button type="button" class="page-header__toggle">
+        <button type="button" class="button page-header__toggle">
           <span class="visually-hidden">
             Открыть/закрыть меню
           </span>
         </button>
-      </div>
       <nav class="main-navigation">
-        <div class="main-navigation__wrapper">
-          <ul class="main-navigation__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a href="index.html">
-                Главная
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="catalog.html">
-                Каталог продукции
-              </a>
-            </li>
-            <li class="site-list__item">
-              <a href="#">
-                Подбор программы
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="main-navigation__list site-list">
+          <li class="site-list__item site-list__item--active site-list__item--form">
+            <a href="#">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--form">
+            <a href="catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item site-list__item--form">
+            <a href="form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <main class="page-form">
       <div class="container">
-        <h2 class="page-form__title">Подбор программы</h2>
+        <h1 class="page-form__title">Подбор программы</h1>
         <p class ="page-form__intro">
           Заполните анкету, и мы подберем программу питания для вашего кота
         </p>
         <div class="page-form__wrapper">
           <form class="page-form__list form">
 
-            <fieldset class="form__item">
+            <fieldset class="form__item form__item--bio">
               <legend class="visually-hidden">
                 Информация о животном
               </legend>
@@ -74,7 +68,7 @@
               </ul>
             </fieldset>
 
-            <fieldset class="form__item">
+            <fieldset class="form__item form__item--plan">
               <legend class="visually-hidden">
                 Цель программы
               </legend>
@@ -94,13 +88,13 @@
               </ul>
             </fieldset>
 
-            <fieldset class="form__item">
+            <fieldset class="form__item form__item--contacts">
               <p class="form__title">
                 Контактные данные (владельца кота)
               </p>
-              <ul class="form__group form__group--text-input">
+              <ul class="form__group form__group--contacts">
                 <li class="form__field field-text">
-                  <label class="field-text__label field-text__label--email" for="e-mail">E-mail:*</label>
+                  <label class="field-text__label field-text__label--email" for="e-mail">E&#8209mail:*</label>
                   <input class="field-text__input field-text__input--tel" type="email" name="e-mail" id="e-mail" placeholder="kuklachev@gmail.com">
                 </li>
                 <li class="form__field field-text">
@@ -117,12 +111,11 @@
               <label class="visually-hidden" for="comment">
                 Оставьте комментарий
               </label>
-              <textarea class="form__field field-text field-text--area" id="comment">Расскажите обо всех повадках кота
-              </textarea>
+              <textarea class="form__field field-text field-text--area" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </fieldset>
 
-            <fieldset class="form__item">
-              <p class="form__title">
+            <fieldset class="form__item addition">
+              <p class="form__title form__title--addition">
                 Дополнительно
               </p>
               <ul class="form__group form__group--checkbox">
